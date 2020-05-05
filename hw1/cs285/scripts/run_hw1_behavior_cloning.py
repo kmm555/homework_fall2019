@@ -3,9 +3,11 @@ import time
 import numpy as np
 import tensorflow as tf
 
+
 from cs285.infrastructure.rl_trainer import RL_Trainer
 from cs285.agents.bc_agent import BCAgent
 from cs285.policies.loaded_gaussian_policy import Loaded_Gaussian_Policy
+
 
 class BC_Trainer(object):
 
@@ -114,6 +116,7 @@ def main():
 
     trainer = BC_Trainer(params)
     trainer.run_training_loop()
+
 
 if __name__ == "__main__":
     main()
